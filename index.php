@@ -43,7 +43,6 @@ include (APPLICATION_PATH . "/inc/config.inc.php");
 ?>
 
 <!-- main page content ................................. -->
-<div class="container">
 
 <?php
 /*
@@ -53,7 +52,6 @@ include (APPLICATION_PATH . "/inc/config.inc.php");
 include (TEMPLATE_PATH . "/public/home.inc.php");
 ?>
 
-</div><!--.container --> 
 <!-- main page  end .................................... -->
 
 <?php

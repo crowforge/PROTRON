@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/* ....................................................................................*/
+/* Basic bootstrap customisation                                                       */
+/* ....................................................................................*/
+/* 
+    The basic page contains a fixed position navigation bar the main page content
+    gets hidden under this so padding is required to ensure the main page body
+    is pushed down a little bit
+*/
+	
+body 
+{
+	padding-top: 60px;
+	padding-bottom: 40px;
+	margin: 0;
+}
+
+
+/* USAGE EXAMPLES
+=======================================================================================
+
+applys to the HTML body element not to a class or id attribute
+
+=======================================================================================*/
+
+
+/* ....................................................................................*/
+/* minimum hight of example boxes                                                      */
+/* ....................................................................................*/
+/* 
+    make the example boxes a minimum height for the heading and explaination so 
+    that they line up
+*/
+
+.fixedHeight
+{
+	display: inline-block;
+	min-height: 80px;
+}
+
+/* USAGE EXAMPLES
+=======================================================================================
+
+<div class="span4">
+ <h2 class="fixedHeight">Bootstrap Buttons</h2>
+ <p class="fixedHeight">Using the default buttons and creating custom buttons</p>
+ </br>
+ <p>
+    <a class="btn btn-success" href="#">See Code</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <a class="btn btn-primary" href="#">See Page</a>
+ </p>
+ </div><!-- .span4 -->
+
+=======================================================================================*/
