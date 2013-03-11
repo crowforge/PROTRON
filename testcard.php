@@ -12,7 +12,7 @@
             <link href="lib/bootstrap_v230/css/bootstrap-responsive.min.css" rel="stylesheet"/>
             
             <!-- Your styles go in here-->
-            <link href="css/examples/examples_0_basic.css" rel="stylesheet"/>
+            <link href="css/examples/example_0_basic.css" rel="stylesheet"/>
 
             <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
             <!--[if lt IE 9]>
@@ -57,7 +57,7 @@
                      <p class="fixedHeight">A basic bootstrap page, no customisation</p>
                      </br>
                      <p>
-                        <a class="btn btn-success" href="#">See Code</a>
+                        <a class="btn btn-success" href="jigs/example_0_code_basicpage.php">See Code</a>
                         &nbsp;&nbsp;&nbsp;&nbsp;
                         <a class="btn btn-primary" href="jigs/example_0_basicpage.php">See Page</a>
                      </p>
@@ -68,7 +68,7 @@
                      <p class="fixedHeight">Using a band of colour or a box. Shown with twitter buttons and embedded timelines</p>
                      </br>
                      <p>
-                        <a class="btn btn-success" href="#">See Code</a>
+                        <a class="btn btn-success" href="jigs/example_1_code_bandsAndboxes.php">See Code</a>
                         &nbsp;&nbsp;&nbsp;&nbsp;
                         <a class="btn btn-primary" href="jigs/example_1_bandsAndboxes.php">See Page</a>
                      </p>

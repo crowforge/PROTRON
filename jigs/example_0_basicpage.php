@@ -36,7 +36,7 @@
             <link href="../lib/bootstrap_v230/css/bootstrap-responsive.min.css" rel="stylesheet"/>
             
             <!-- Your styles go in here-->
-            <link href="../css/examples/examples_0_basic.css" rel="stylesheet"/>
+            <link href="../css/examples/example_0_basic.css" rel="stylesheet"/>
 
             <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
             <!--[if lt IE 9]>
@@ -54,7 +54,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </a>
-                  <a class="brand" href="#">PROTRON</a>
+                  <a class="brand" href="../index.php">PROTON</a>
                   <div class="nav-collapse">
                     <ul class="nav">
                       <li class="active"><a href="#">Home</a></li>
