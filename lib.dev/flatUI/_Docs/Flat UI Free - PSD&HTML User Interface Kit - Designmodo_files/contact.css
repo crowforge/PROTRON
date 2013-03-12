@@ -1,0 +1,107 @@
+#jigowatt_form h1 { margin: 10px 0 10px; color: #333333; }
+#jigowatt_form hr { color: inherit; height: 0; margin: 6px 0 6px 0; padding: 0; border: 1px solid #d9d9d9; border-style: none none solid; }
+
+#jigowatt_form, #jigowatt_form form { margin: 0; padding: 0; border: 0; }
+
+#jigowatt_form div {
+	overflow: hidden;
+	zoom: 1;
+}
+
+/* Form style */
+
+#jigowatt_form label {font-weight:bold;display: block;}
+
+#jigowatt_form input, #jigowatt_form textarea {
+background-color: #F8F8F8;
+border: 1px solid #DADADA !important;
+color: #DADADA;
+display: inline;
+font-size: 14px !important;
+height: 35px !important;
+padding: 0 0 0 10px;
+width: 97%;
+margin:6px 0.7% 0 0;
+outline:none;
+}
+#jigowatt_form_1 {
+padding-top:20px;
+}
+#jigowatt_form_1 div {
+padding-bottom:20px;
+}
+
+#jigowatt_form textarea {
+padding: 4px;
+min-height:80px;
+}
+#jigowatt_form select {
+	width: 99%;
+	margin: 0 0 5px;
+}
+#jigowatt_form input.captcha {
+width: 150px;
+float: left;
+margin-left: 8px;
+height: 31px!important;
+}
+#jigowatt_form .captcha_image {
+	vertical-align: middle;
+	margin: 5px 0px;
+	padding: 1px;
+	border: 1px solid #ccc;
+	float: left;
+}
+#jigowatt_form input:focus, #jigowatt_form textarea:focus { border: 1px solid #999; background-color: #fff; color:#333;outline:none; }
+#jigowatt_form input[type="submit"] {border:0!important;}
+#jigowatt_form input.submit { 
+    background: none repeat scroll 0 0 #5BC4BE;
+    border: 1px solid #5BC4BE;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 9px 12px;
+    text-decoration: none;
+    width: auto;
+	margin: 0 0 25px;
+	cursor: pointer;
+}
+#jigowatt_form input.submit:hover { 
+	color:#ffffff;
+	border: 1px solid #446DB2;
+	background: #446DB2;
+ }
+#jigowatt_form input[type="submit"][disabled] { background:#888; cursor: default; }
+#jigowatt_form fieldset { border:1px solid #fff;}
+#jigowatt_form legend {
+font-family: 'Varela Round', sans-serif;
+font-size: 16px;
+color: #999;
+margin-bottom: 10px
+}
+
+#jigowatt_form span.required{
+font-size: 13px;
+color: #E2435A;
+float: left;
+margin-right: 2px;
+}
+
+#jigowatt_form #message { margin: 0; padding: 0; }
+
+#jigowatt_form .error_message { display: block; line-height: 22px; background: #FBE3E4 url('../assets/error.gif') no-repeat 10px 10px; padding: 8px 10px 8px 35px; color:#8a1f11;border: 1px solid #FBC2C4; -moz-border-radius:5px; -webkit-border-radius:5px; margin: 10px 0; }
+
+#jigowatt_form ul.error_messages { margin: 0 0 0 15px; padding: 0; }
+#jigowatt_form ul.error_messages li { height: 22px; line-height: 22px; color:#333; }
+
+#jigowatt_form .loader { padding: 0 10px; }
+
+#jigowatt_form #success_page h1 { background: url('../assets/success.gif') left no-repeat; padding-left:22px; }
+
+#jigowatt_form acronym { border-bottom:1px dotted #ccc; }
+
+
+@media screen and (max-width: 480px) {
+#jigowatt_form input, #jigowatt_form textarea { width:96%;}
+}
