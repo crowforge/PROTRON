@@ -1,0 +1,33 @@
+## Notes On GIT ##
+
+# DEVELOPING - in a SPRINT #
+
+Before you GIT check the following so you know where you are
+
+- git branch
+- git status
+- git tag
+
+You should be in your develop branch if writing new code.
+Your master should contain working code from your last sprint.
+
+Once new code is added the general sequence is
+
+- git status
+- git add .
+- git commit -m "a note about the commit"
+- git push origin <branch name>
+- git status
+
+# A RELEASE - end of sprint #
+
+The sprint is over, a tested working copy now needs to be released 
+to the master branch
+
+Once you are sure you have added, committed and pushed all files to the development
+branch then
+
+- git checkout master
+- git merge --no-ff develop
+- git status
+
