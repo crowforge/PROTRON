@@ -30,4 +30,9 @@ branch then
 - git checkout master
 - git merge --no-ff develop
 - git status
+- git tag
+- git branch
+- git push origin master
+
+
 
