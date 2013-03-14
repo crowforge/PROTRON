@@ -1,0 +1,171 @@
+@charset "UTF-8";
+/* ....................................................................................*/
+/* Override bootstrap CSS                                                              */
+/* ....................................................................................*/
+/* 
+    add your own classes or override the property definitions in named bootstrap classes
+*/
+
+#myStyle 
+{
+    color:indigo;
+}
+
+.btn-warning {
+    font-size:20px;
+    padding:60px;
+}
+
+.btn-mysinglemod {
+    font-size:20px;
+    padding:10px;
+}
+
+/* USAGE EXAMPLES
+=======================================================================================
+<div class="container">
+ <div id="myStyle" class="hero-unit">
+ <h1>WebAPI&apos;s</h1>
+ <p>Using Twitter, Facebook, Google and other API&apos;s</p>
+ </div><!-- .hero-unit -->
+</div>
+
+=======================================================================================*/
+
+
+/* ....................................................................................*/
+/* BANDS of colour Vs BOXES of colour                                                  */
+/* ....................................................................................*/
+/* The container class pads any text within it but keeps all span content within the container
+   the container-fluid class with a background colour allows the colour to stretch the 
+   full with of the viewport, BUT the span content is right up against the left edge
+   this is not a problem if the colour stretches the length of the viewport but if you want
+   the colour background only in the block of the container you need to add padding which
+   pads outwards from the edge not into the container space
+*/
+
+.twitter 
+{
+    padding-left: 20px;
+    padding-right:20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:#33ccff;
+}
+
+/* USAGE EXAMPLES
+=======================================================================================
+</br>
+<!-- BAND OF COLOUR : across the full viewport example -->
+<div class="container-fluid twitter">
+     <div class="container">
+          <div class="row-fluid">
+               <div class="span12">
+                         <p>a band of colour</p>
+               </div> <!-- .span12 -->
+          </div><!-- .row -->
+     </div><!-- .container -->
+</div><!-- .container-fluid -->
+
+</br>
+<!-- BOX OF COLOUR: with a container example -->
+<div class="container twitter">
+     <div class="row">
+          <div class="span12">
+                    <p>a box of colour</p>
+          </div> <!-- .span12 -->
+     </div><!-- .row -->
+</div><!-- .container -->
+
+======================================================================================*/
+
+
+/* ....................................................................................*/
+/* Jumbotrons - gradiants and multibrowser specific properties                         */
+/* ....................................................................................*/
+/* 
+    Jumbotrons are used by bootstraps own site to display the bootstrap banner
+    They are a good example of multi browser property definitions and of how to
+    customise bootstrap. There is also an example of the use of media queries
+*/
+
+.jumbotron {
+  position: relative;
+  padding: 40px 0;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+  background: #020031; /* Old browsers */
+  background: -moz-linear-gradient(45deg, #020031 0%, #6d3353 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#020031), color-stop(100%,#6d3353)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(45deg, #020031 0%,#6d3353 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(45deg, #020031 0%,#6d3353 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(45deg, #020031 0%,#6d3353 100%); /* IE10+ */
+  background: linear-gradient(45deg, #020031 0%,#6d3353 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020031', endColorstr='#6d3353',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+     -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+          box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+}
+.jumbotron h1 {
+  font-size: 80px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+.jumbotron p {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.25;
+  margin-bottom: 30px;
+}
+
+/* Link styles */
+.jumbotron a {
+  color: #fff;
+  color: rgba(255,255,255,.5);
+  -webkit-transition: all .2s ease-in-out;
+     -moz-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+.jumbotron a:hover {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255,255,255,.25);
+}
+
+/* Pattern overlay
+------------------------- */
+.jumbotron .container {
+  position: relative;
+  z-index: 2;
+}
+.jumbotron:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../img/bs-docs-masthead-pattern.png) repeat center center;
+  opacity: .4;
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and ( min--moz-device-pixel-ratio: 2),
+only screen and ( -o-min-device-pixel-ratio: 2/1) {
+
+  .jumbotron:after {
+    background-size: 150px 150px;
+  }
+
+}
+
+/* USAGE EXAMPLES
+=======================================================================================
+
+<div class="jumbotron">
+          <h1>Twitter API's</h1>
+</div>
+
+======================================================================================*/

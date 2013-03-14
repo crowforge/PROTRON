@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Michel Fortin – PHP Markdown: Concepts</title>
+	<link rel="home" type="text/html" href="http://michelf.ca/accueil/">
+	<link rel="stylesheet" type="text/css" href="Michel%20Fortin%20%E2%80%93%20PHP%20Markdown%20%20Concepts_files/projets.css" media="all, handheld">
+		<meta name="viewport" content="width=device-width">
+</head>
+<body>
+
+<div id="tete">
+		<p><a href="http://michelf.ca/home/"><span class="minilogo"><img src="Michel%20Fortin%20%E2%80%93%20PHP%20Markdown%20%20Concepts_files/bateau-projets.gif" alt="Michel Fortin" title="Michel Fortin"></span></a></p>
+	<ul id="main-nav">
+		<li id="main-nav1"><a href="http://michelf.ca/software/">Software</a></li>
+		<li id="main-nav2"><a href="http://michelf.ca/dev-services/">Services</a></li>
+		<li id="main-nav3"><a href="http://michelf.ca/blog/">Blog</a></li>
+		<li id="main-nav4"><a href="http://michelf.ca/store/">Store</a></li>
+	</ul>
+	<hr>
+</div>
+
+<div id="content">
+<h1><small>PHP</small> Markdown: Concepts</h1>
+
+
+
+<ul id="menu-projet">
+<li><a href="http://michelf.ca/projects/php-markdown/">Main</a></li>
+<li><strong>Concepts</strong></li>
+<li><a href="http://michelf.ca/projects/php-markdown/syntax/">Syntax</a></li>
+<li><a href="http://michelf.ca/projects/php-markdown/license/">License</a></li>
+<li><a href="http://michelf.ca/projects/php-markdown/dingus/">Dingus</a></li>
+<li class="alt"><a href="http://michelf.ca/projets/php-markdown/concepts/" hreflang="fr" lang="fr">Français</a></li>
+</ul>
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=michel%2efortin%40michelf%2ecom&amp;lc=CA&amp;item_name=Michel%20Fortin&amp;item_number=PHP%20Markdown&amp;no_note=0&amp;currency_code=CAD&amp;bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHostedGuest" class="money">Donate</a>
+
+<p>This document introduce the concepts you need to know when you write using the Markdown syntax.</p>
+
+<p>A good way to learn Markdown once you know the basics is by training yourself using the dingus (see menu above).</p>
+
+<h2 id="paragraphs">Paragraphs</h2>
+
+<p>A paragraph is defined as one or more lines of text, separated by at least one empty line:</p>
+
+<pre><code>This is a small paragraph illustrating how 
+Markdown works. This paragraph span on many 
+lines.
+
+This is a second paragraph.
+</code></pre>
+
+<p>Here is the result:</p>
+
+<div class="html">
+    <p>This is a small paragraph illustrating how 
+    Markdown works. This paragraph span on many 
+    lines.</p>
+
+    <p>This is a second paragraph.</p>
+</div>
+
+<p>Line breaks inserted in the text are removed from the final result: 
+the web browser is in charge of breaking the lines depending of the 
+available space. If you really want to force a line break somewhere, 
+insert <em>two</em> spaces at the end of the line.</p>
+
+<h2 id="emphasis">Emphasis</h2>
+
+<p>You can put emphasis some part of your text inside a paragraph. There
+ is two types of emphasis: normal emphasis and strong emphasis. On most 
+websites, emphasis is shown as italic while strong emphasis is bold.</p>
+
+<p>To give emphasis to some text with Markdown, we use asterisks (<code>*</code>) or underscores (<code>_</code>).
+ Surrounding some text with one asterisk or one underscore bar gives 
+normal emphasis, while surrounding some text with two asterisks or two 
+underscores results in strong emphasis:</p>
+
+<pre><code>*normal emphasis with asterisks*
+
+_normal emphasis with underscore_
+
+**strong emphasis with asterisks**
+
+__strong emphasis with underscore__
+
+This is some text *emphased* with asterisks.
+</code></pre>
+
+<p>And it gives this result:</p>
+
+<div class="html">
+
+<p><em>normal emphasis with asterisks</em></p>
+
+<p><em>normal emphasis with underscore</em></p>
+
+<p><strong>strong emphasis with asterisks</strong></p>
+
+<p><strong>strong emphasis with underscore</strong></p>
+
+<p>This is some text <em>emphased</em> with asterisks.</p>
+
+</div>
+
+<p>Please note that there is absolutely no difference between using 
+underscore and asterisks: both give exactly the same result. Choose the 
+one you are the most comfortable with.</p>
+
+<h2 id="links">Links</h2>
+
+<p>If you want to insert an hypertext link inside your document, Markdown gives you two ways. You can write your links <em>inline</em> links or <em>by reference</em>.</p>
+
+<p><strong>Inline-style links</strong> allow linking some text to 
+another web page. Surround the link with [brackets], followed by the URL
+ inside parenthesis. Like this</p>
+
+<pre><code>[Michel Fortin](http://michelf.ca/)
+
+[Michel Fortin](http://michelf.ca/ "My website")
+</code></pre>
+
+<div class="html">
+
+<p><a href="http://michelf.ca/">Michel Fortin</a></p>
+
+<p><a href="http://michelf.ca/" title="My website">Michel Fortin</a></p>
+
+</div>
+
+<p>The second link has a title (quoted) which is displayed by most web 
+browser as a tooltip when your mouse stops over the link. The title is 
+optional.</p>
+
+<p><strong>Refence-style links</strong> work the same, except that you 
+do not have to write the URL in the middle of the paragraph, which makes
+ text more legible. Instead you give a name to the link and you write 
+the URL on a separate line — anywhere in the document. It looks like 
+this:</p>
+
+<pre><code>This is a small text written by [Michel Fortin][mf].
+
+ [mf]: http://michelf.ca/ "My website"
+</code></pre>
+
+<p>The line that define the URL is stripped from the final result and the bracketed text becomes a link:</p>
+
+<div class="html">
+
+<p>This is a small text written by <a href="http://michelf.ca/" title="My website">Michel Fortin</a>.</p>
+
+</div>
+
+<p>Again, the title of the link (My website) is optional.</p>
+
+<h3 id="auto-links">Automatic links</h3>
+
+<p>If you simply want to be able to click at an URL inserted in your 
+text, put the URL between angle brackets and Markdown will make a 
+clickable link with it:</p>
+
+<pre><code>&lt;http://michelf.ca/&gt;
+
+&lt;michel.fortin@michelf.ca&gt;
+</code></pre>
+
+<div class="html">
+
+<p><a href="http://michelf.ca/">http://michelf.ca/</a></p>
+
+<p><a href="mailto:michel.fortin@michelf.ca">michel.fortin@michelf.ca</a></p>
+
+</div>
+
+<h2 id="headers">Headers</h2>
+
+<p>You can add headers and sub-headers to your document with Markdown. 
+Two syntaxes allow you to insert headers with up to six different 
+levels. You can write headers of level 1 and 2 using the “SeText” 
+syntax:</p>
+
+<pre><code>Header 1
+========
+
+Header 2
+--------
+</code></pre>
+
+<div class="html">
+
+<h1>Header 1</h1>
+
+<h2>Header 2</h2>
+
+</div>
+
+<p>The “atx” syntax can create headers of any level by changing the number of hash (<code>#</code>):</p>
+
+<pre><code># Header 1 #
+
+## Header 2 ##
+
+###### Header at level 6
+</code></pre>
+
+<div class="html">
+
+<h1>Header 1</h1>
+
+<h2>Header 2</h2>
+
+<h6>Header at level 6</h6>
+
+</div>
+
+<p>Note that the tailing hashes are optional.</p>
+
+<h2 id="blockquote">Blockquote</h2>
+
+<p>Maybe you already seen this way of quoting someone in an email discussion:</p>
+
+<pre><code>A quote about linear algebra:
+
+&gt; Consistent linear systems in real life are solved in 
+&gt; one of two ways: by direct calculation (using a matrix 
+&gt; factorization, for example) or by an iterative procedure 
+&gt; that generates a sequence of vectors that approach the 
+&gt; exact solution.
+</code></pre>
+
+<div class="html">
+
+<p>A quote about linear algebra:</p>
+
+<blockquote>
+  <p>Consistent linear systems in real life are solved in 
+  one of two ways: by direct calculation (using a matrix 
+  factorization, for example) or by an iterative procedure 
+  that generates a sequence of vectors that approach the 
+  exact solution.</p>
+</blockquote>
+
+</div>
+
+<p>You can put more than one paragraph inside a blockquote. You can also put a second blockquote level, lists, etc.</p>
+
+<h2 id="lists">Lists</h2>
+
+<p>Markdown assists you when creating numbered lists (ordered) and 
+bullet lists (unordored). To create and ordered list, use a number 
+followed by a dot as the item marker:</p>
+
+<pre><code>1.  Snowy
+2.  Elf
+3.  Boreal
+</code></pre>
+
+<div class="html">
+
+<ol>
+<li>Snowy</li>
+<li>Elf</li>
+<li>Boreal</li>
+</ol>
+
+</div>
+
+<p>To create an unordered list, use <code>*</code>, <code>+</code>, or <code>-</code> as item marker:</p>
+
+<pre><code>*   Sun
+*   Moon
+*   Earth
+</code></pre>
+
+<div class="html">
+
+<ul>
+<li>Sun</li>
+<li>Moon</li>
+<li>Earth</li>
+</ul>
+
+</div>
+
+<p>You can nest lists by indenting by four spaces (or one tab) the lists on the second level:</p>
+
+<pre><code>*   Ingredients
+    -   Milk
+    -   Eggs
+*   Recipies
+    1.  Pancake
+    2.  Waffle
+</code></pre>
+
+<div class="html">
+
+<ul>
+<li>Ingredients
+
+<ul>
+<li>Milk</li>
+<li>Eggs</li>
+</ul></li>
+<li>Recipies
+
+<ol>
+<li>Pancake</li>
+<li>Waffle</li>
+</ol></li>
+</ul>
+
+</div>
+
+<p>If your list contains entire paragraphs, leave an empty line between 
+list items. To write more than one paragraph under the same item, make 
+sure that they are indented by 4 spaces (or one tab):</p>
+
+<pre><code>1.  First paragraph.
+
+    Second paragraph.
+
+2.  Another list item.
+
+3.  Yet another.
+</code></pre>
+
+<div class="html">
+
+<ol>
+<li><p>First paragraph.</p>
+
+<p>Second paragraph.</p></li>
+<li><p>Another list item.</p></li>
+<li><p>Yet another.</p></li>
+</ol>
+
+</div>
+
+<h2 id="code">Code</h2>
+
+<h3>Code Blocks</h3>
+
+<p>We write a code block by indenting some lines by four spaces (or one tab):</p>
+
+<pre><code>How to mark emphasis:
+
+    Using &lt;em&gt;HTML&lt;/em&gt; and using *Markdown*.
+</code></pre>
+
+<p>Inside a code block, you can write HTML tags or Markdown formatting; 
+in both cases the syntax won’t be parsed and text will be shown as is:</p>
+
+<div class="html">
+
+<p>How to mark emphasis:</p>
+
+<pre><code>Using &lt;em&gt;HTML&lt;/em&gt; and using *Markdown*.
+</code></pre>
+
+</div>
+
+<h3>Code Spans</h3>
+
+<p>You can make a code span in the middle of your paragraph by using the backtick (<code>`</code>), this way:</p>
+
+<pre><code>Please don't use the `&lt;blink&gt;` tag.
+</code></pre>
+
+<p>Which will produce the following result:</p>
+
+<div class="html">
+
+<p>Please don’t use the <code>&lt;blink&gt;</code> tag.</p>
+
+</div>
+
+<h2 id="html">HTML</h2>
+
+<p>You don’t have to know HTML in order to use Markdown. But if you know
+ some HTML tags, you can use them where you want. For example, to format
+ some text as superscript — something not covered by the Markdown syntax
+ — you can use the <code>&lt;sup&gt;</code> HTML tag:</p>
+
+<pre><code>Be cautious about what you read on April 1&lt;sup&gt;st&lt;/sup&gt;!
+</code></pre>
+
+<p>Markdown will skip the tag without changing it and the browser will display text inside as superscript:</p>
+
+<div class="html">
+<p>Be cautious about what you read on April 1<sup>st</sup>!</p>
+</div>
+
+<p>Some tags like <code>&lt;p&gt;</code> and <code>&lt;div&gt;</code> delimits text blocks. If you use these tags, special rules apply. See the <a href="http://daringfireball.net/projects/markdown/syntax#html">Inline HTML</a> section from the syntax desciption to learn about them.</p>
+
+</div>
+
+<div id="sitemap"><hr><div class="navcolumn"><p>Sitemap</p><ul><li><a href="http://michelf.ca/blog/">Weblog</a><ul><li><a href="http://michelf.ca/blog/archive/">Archive</a></li></ul></li><li><a href="http://michelf.ca/dev-services/">Services</a></li><li><a href="http://michelf.ca/contact/">Contact Me</a></li></ul></div><div class="navcolumn"><p><a href="http://michelf.ca/software/">Software</a></p><ul class="continued"><li><a href="http://michelf.ca/projects/sim-daltonism/">Sim Daltonism</a></li><li><a href="http://michelf.ca/projects/black-light/">Black Light</a></li><li><a href="http://michelf.ca/projects/gamma-control/">Gamma Control</a></li><li><a href="http://michelf.ca/projects/asounding/">Asounding</a></li></ul><ul class="continued"><li><a href="http://michelf.ca/projects/php-markdown/">PHP Markdown</a></li><li><a href="http://michelf.ca/projects/php-smartypants/">PHP SmartyPants</a></li><li><a href="http://michelf.ca/projects/d-objc/">D/Objective-C</a></li><li><a class="more" href="http://michelf.ca/software/">more...</a></li></ul></div><div class="navcolumn"><p>Resources</p><ul><li><a href="http://git.michelf.ca/">Git Repositories</a></li><li><a href="http://pear.michelf.ca/">PEAR Channel</a></li></ul></div></div>
+
+
+
+</body></html>

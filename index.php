@@ -18,6 +18,7 @@ define("MY_INC_CODE", 1);
 
 define("APPLICATION_PATH", "app");
 define("TEMPLATE_PATH", APPLICATION_PATH . "/view");
+define("LIBRARY_PATH", "lib");
 
 /*
  * Pull in the header component of the HTML page
@@ -26,7 +27,7 @@ define("TEMPLATE_PATH", APPLICATION_PATH . "/view");
  * Contains <HTML><HEADER></HEADER><BODY> and menu ..
  */
 
-include (TEMPLATE_PATH . "/public/header.html");
+include (TEMPLATE_PATH . "/public/header_frontpage.html");
 
 /*
  * Pull in the configuration files
@@ -43,7 +44,6 @@ include (APPLICATION_PATH . "/inc/config.inc.php");
 ?>
 
 <!-- main page content ................................. -->
-<div class="container">
 
 <?php
 /*
@@ -53,7 +53,6 @@ include (APPLICATION_PATH . "/inc/config.inc.php");
 include (TEMPLATE_PATH . "/public/home.inc.php");
 ?>
 
-</div><!--.container --> 
 <!-- main page  end .................................... -->
 
 <?php
@@ -61,5 +60,5 @@ include (TEMPLATE_PATH . "/public/home.inc.php");
  * Pull in the public version of the footer
  * contains JQuery pullin and <BODY/><HTML/>
  */
- include (TEMPLATE_PATH . "/public/footer.html"); 
+ include (TEMPLATE_PATH . "/public/footer_frontpage.html"); 
  ?>
