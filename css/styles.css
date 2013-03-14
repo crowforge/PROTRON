@@ -1,28 +1,138 @@
 @charset "UTF-8";
+
+/*
+ Colour Notes Flat UI
+ orange
+ background-color: #E67E22;
+ background-color: #D35400;
+
+ blues
+ #ABC1C7
+ #67ADB4
+ #4094C1
+
+ yellow: #D8BC33;
+
+background: linear-gradient(#ccc, #fff);
+
+*/
+
+
+/* 
+--------------------------------------------------
+ Basic page layout, that ensures that the footer is at the end of the page
+-------------------------------------------------- */
 	
-body 
+html, body 
 {
-	padding-top: 60px;
-	padding-bottom: 40px;
-	margin: 0;
+  height: 100%;
 }
-	
-/* override examples */
 
-#myStyle 
+footer 
 {
-    color:indigo;
+  color: #666;
+  background: #222;
+  padding: 17px 0 18px 0;
+  border-top: 1px solid #000;
 }
 
-.btn-success {
-    font-size:20px;
-    padding:60px;
+footer a 
+{
+  color: #999;
 }
 
-.btn-mysinglemod {
-    font-size:20px;
-    padding:10px;
+footer a:hover 
+{
+  color: #efefef;
 }
+
+.wrapper 
+{
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -63px;
+  /*
+    background-color: #4094C1; - google blue
+    background-color: #EEA901; - orange brown
+  */
+  background-color: #EEA901;
+}
+
+.push 
+{
+  height: 63px;
+  background-color: #4094C1;
+}
+
+/* not required for sticky footer; just pushes hero down a bit */
+.wrapper > .container 
+{
+  padding-top: 60px;
+}
+
+
+/* 
+--------------------------------------------------
+ -
+-------------------------------------------------- */
+
+.colourband1 
+{
+    padding-left: 20px;
+    padding-right:20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /*
+    google colours
+    background-color: #ABC1C7;
+    background-color: #F8F8F7;
+    background-color: #B7B1AE;
+    background-color: #D8BC33;
+    background-color: #4094C1;
+    background-color: #DABB3A;
+    background-color: #1EA061; - Green
+    background-color: #C84941; - Red
+    background-color: #67ADB4; - blue
+    background-color: #ABC1C7; - grey
+    background-color: #FFD57C; - butter
+    background-color: #F9A11B; - gold
+    background-color: #EAB91B; - mustard
+     background-color: #6B4A14 - brown;
+    */
+    background-color: #6B4A14;
+
+
+    /*ISSUE? what issues will this cause for responsize design */
+    min-height: 600px;
+}
+
+.colourband2 
+{
+    padding-left: 20px;
+    padding-right:20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #4094C1;
+
+    /*ISSUE? what issues will this cause for responsize design */
+    min-height: 100px;
+}
+
+.helpDoc
+{
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  padding: 24px;
+}
+
+
+
+
+/* 
+--------------------------------------------------
+ The blue twitter colour band
+-------------------------------------------------- */
 
 .twitter 
 {
@@ -34,11 +144,10 @@ body
 }
 
 
-/* Jumbotrons
+/* 
+--------------------------------------------------
+ Jumbotrons from Bootstraps Example site
 -------------------------------------------------- */
-
-/* Base class
-------------------------- */
 .jumbotron {
   position: relative;
   padding: 40px 0;

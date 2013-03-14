@@ -27,14 +27,11 @@
                 <div class="container">
                   <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
                   </a>
                   <a class="brand" href="#">TESTCARD</a>
                   <div class="nav-collapse">
                     <ul class="nav">
-                      <li class="active"><a href="testcard.php">TestCard</a></li>
-                      <li><a href="index.php">Application</a></li>
+                      <li><a href="index.php">Home</a></li>
                     </ul>
                   </div><!--/.nav-collapse -->
                 </div>
@@ -76,13 +73,13 @@
 
                
                      <div class="span4">
-                     <h2 class="fixedHeight">Bootstrap Buttons</h2>
-                     <p class="fixedHeight">Using the default buttons and creating custom buttons</p>
+                     <h2 class="fixedHeight">Stick to bottom footer</h2>
+                     <p class="fixedHeight">put the footer at the end of the page</p>
                      </br>
                      <p>
                         <a class="btn btn-success" href="#">See Code</a>
                         &nbsp;&nbsp;&nbsp;&nbsp;
-                        <a class="btn btn-primary" href="#">See Page</a>
+                        <a class="btn btn-primary" href="jigs/example_2_basicpageBottomFooter.php">See Page</a>
                      </p>
                      </div><!-- .span4 -->
 

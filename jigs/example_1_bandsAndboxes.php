@@ -70,12 +70,14 @@
 
             <!-- main page content -->
 
-            <!-- testcard button -->
-            <p align="right"><a href="../testcard.php" class="btn btn-success btn-large">
-              <i class="icon-white icon-arrow-left"></i> back to testcard</a></p>
 
             <!-- HERO UNIT -->
             <div class="container">
+
+                <!-- testcard button -->
+                <p align="right"><a href="../testcard.php" class="btn btn-success btn-large">
+                <i class="icon-white icon-arrow-left"></i> back to testcard</a></p>
+
                 <div id="myStyle" class="hero-unit">
                     <h1>Example 1</h1>
                     </br>

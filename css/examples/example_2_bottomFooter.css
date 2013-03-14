@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/* ....................................................................................*/
+/* Sticky Footer                                                                       */
+/* ....................................................................................*/
+/* 
+    description
+*/
+
+html, body 
+{
+	height: 100%;
+}
+
+footer 
+{
+	color: #666;
+	background: #222;
+	padding: 17px 0 18px 0;
+	border-top: 1px solid #000;
+}
+
+footer a 
+{
+	color: #999;
+}
+
+footer a:hover 
+{
+	color: #efefef;
+}
+
+.wrapper 
+{
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -63px;
+}
+
+.push 
+{
+	height: 63px;
+}
+
+/* not required for sticky footer; just pushes hero down a bit */
+.wrapper > .container 
+{
+	padding-top: 60px;
+}
+
+
+/* USAGE EXAMPLES
+=======================================================================================
+
+<!-- to the edges example, 
+need container-fluid if you want bands of colour that go rignt to the edge
+if use container a 60px gap is left
+-->
+
+<div class="container-fluid twitter">
+     <div class="container">
+          <div class="row-fluid">
+               <div class="span12">
+                         <p>a band of colour</p>
+               </div> <!-- .span12 -->
+          </div><!-- .row -->
+     </div><!-- .container -->
+</div><!-- .container-fluid -->
+
+
+<!-- keep this at the bottom to push down the footer-->
+<div class="push"><!--//--></div>
+</div><!-- .wrapper -->
+
+<br/>
+
+<!-- footer -->
+<footer>
+<div class="container">
+        <p>&copy; Conor O&apos;Reilly 2013</p>
+</div>
+</footer>
+
+=======================================================================================*/
+
+
