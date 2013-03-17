@@ -50,6 +50,8 @@ Syntax highlighting
 ==================================================================
 http://code.google.com/p/google-code-prettify/
 http://google-code-prettify.googlecode.com/svn/trunk/README.html
+http://zoomzum.com/10-syntax-highlight-javascript-plugins/
+
 
 
 ==================================================================

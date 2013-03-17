@@ -15,9 +15,13 @@ through the following levels of programming and application design:
 - ELEMENT2, an interactive web application based on the CodeIgniter PHP framework
 
 The various branches in GIT are significant as with each branch the code is added to and 
-refractored. There are lessons to be learn't prior to each refactor, see technical debt
+refractored. There are lessons to be learnt prior to each refactor, see technical debt
 
-As the course progresses, the following core functionality is taught via the above projects
+As the course progresses, the following core functionality is taught via the above projects.
+The code is pulled down a branch at a time where each branch has functionality implemented
+that is relevant to the learners current level of understanding of the tools. Each branch
+has technical debt, bugs and how-to issues that need to be resolved in that branch
+from a previous branch or from many previous branches back.
 
 - HTML5, CSS2, CSS3, Javascript: roll your own basic webpage, client side only
 - HTML5, CSS3, Javascript, JQuery, Javascript libraries : still client side web site \ app
@@ -26,10 +30,10 @@ As the course progresses, the following core functionality is taught via the abo
 - Bootstrap, PHP, Responsive Vs. adaptive design : basic client - server web site \ app
 - Bootstrap, PHP, MySQL, AJAX, JQuery : Client - Server interactive web application
 - Bootstrap, PHP, MySQL, AJAX, JQuery, other site API's Twitter, Facebook, Google, PayPal
-- Bootstrap, PHP object oriented and big site \ app application structure
+- Bootstrap, PHP object oriented, REST and big site \ app application structure
 - Bootstrap, LESS, PHP Frameworks and design patterns
 - Foundations, JQuery Mobile, PhoneGap, PHP Frameworks \ libraries
-- NoSQL databases
+- NoSQL databases, Yeoman
 
 ## Main application entry points ##
 
@@ -67,7 +71,7 @@ The pages were named home_ as the intention is to add other pages showing off
 other features within each API. Though the naming convention of using the key
 noun associated with the page is used with any further attributes following it
 e.g. footer, footer_frontpage. This also means that pages with a similar intent
-or theme are kept togeather in the projects directory structure
+or theme are kept together in the projects directory structure
 
 ## PROTON Directory Structure ##
 

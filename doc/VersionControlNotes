@@ -1,5 +1,7 @@
 ## Notes On GIT ##
 
+The following are for a one man only software development project
+
 # DEVELOPING - in a SPRINT #
 
 Before you GIT check the following so you know where you are
@@ -27,12 +29,18 @@ to the master branch
 Once you are sure you have added, committed and pushed all files to the development
 branch then
 
-- git checkout master
-- git merge --no-ff develop
-- git status
+- git checkout master			bring back the master branch
+- git merge --no-ff develop     merge in all the new code
+- git status					(just checking where you are)
 - git tag
 - git branch
-- git push origin master
+- git push origin master		update the version of master in the remote repository
+- git checkout develop 			bring back the development branch (now the same as master)
+- git status					(just checking where you are)
+- git branch
+
+start working on the functionality required by the new sprint
+
 
 
 

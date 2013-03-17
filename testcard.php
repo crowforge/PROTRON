@@ -84,6 +84,81 @@
                      </div><!-- .span4 -->
 
                 </div><!-- .row -->
+                </br>
+
+                <!-- ============ new examples row ============== -->
+                <div class="row">
+
+                     <div class="span4">
+                     <h2 class="fixedHeight">PHP info Check</h2>
+                     <p class="fixedHeight">Check PHPs configuration settings</p>
+                     </br>
+                     <p>
+                        <a class="btn btn-primary" href="jigs/phpinfo.php">Check</a>
+                     </p>
+                     </div><!-- .span4 -->
+               
+                     <div class="span4">
+                     <h2 class="fixedHeight">x</h2>
+                     <p class="fixedHeight">xxx</p>
+                     </br>
+                     <p>
+                        <a class="btn btn-success" href="#">See Code</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a class="btn btn-primary" href="#">See Page</a>
+                     </p>
+                     </div><!-- .span4 -->
+
+                     <div class="span4">
+                     <h2 class="fixedHeight">x</h2>
+                     <p class="fixedHeight">xxx</p>
+                     </br>
+                     <p>
+                        <a class="btn btn-success" href="#">See Code</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a class="btn btn-primary" href="#">See Page</a>
+                     </p>
+                     </div><!-- .span4 -->
+
+                </div><!-- .row -->
+                <br/>
+                <!-- ============ new examples row ============== -->
+                <div class="row">
+
+                     <div class="span4">
+                     <h2 class="fixedHeight">x</h2>
+                     <p class="fixedHeight">xxx</p>
+                     </br>
+                     <p>
+                        <a class="btn btn-success" href="#">See Code</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a class="btn btn-primary" href="#">See Page</a>
+                     </p>
+                     </div><!-- .span4 -->
+               
+                     <div class="span4">
+                     <h2 class="fixedHeight">x</h2>
+                     <p class="fixedHeight">xxx</p>
+                     </br>
+                     <p>
+                        <a class="btn btn-success" href="#">See Code</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a class="btn btn-primary" href="#">See Page</a>
+                     </p>
+                     </div><!-- .span4 -->
+
+                     <div class="span4">
+                     <h2 class="fixedHeight">x</h2>
+                     <p class="fixedHeight">xxx</p>
+                     </br>
+                     <p>
+                        <a class="btn btn-success" href="#">See Code</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a class="btn btn-primary" href="#">See Page</a>
+                     </p>
+                     </div><!-- .span4 -->
+
+                </div><!-- .row -->
         
             </div><!-- .container -->
 

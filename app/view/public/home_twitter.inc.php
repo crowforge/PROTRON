@@ -13,6 +13,16 @@ defined('MY_INC_CODE') or die('Access to this file is restricted');
 
 ?>
 
+<!--  button -->
+<div class="container buttonbar">
+<p align="right">
+  <a href="twitter_post.php" class="btn btn-success btn-large">A Tweet</a>
+  <a href="twitter_postForm.php" class="btn btn-success btn-large">A Tweet Form : PHP</a>
+  <a href="twitter_postFormAJAX.php" class="btn btn-success btn-large">A Tweet Form : AJAX</a>
+  <a href="twitter_postFormJQueryAJAX.php" class="btn btn-success btn-large">A Tweet Form : JQuery AJAX</a>
+</p>
+</div>
+
 <div class="jumbotron">
           <h1>Twitter API's</h1>
 </div>
@@ -156,4 +166,6 @@ defined('MY_INC_CODE') or die('Access to this file is restricted');
       </div><!-- .row -->
  </div><!-- .container -->            
 
+ <!-- Twitter JS -->
+ <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
 

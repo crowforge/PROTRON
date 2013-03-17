@@ -1,39 +1,23 @@
 @charset "UTF-8";
 
 /*
- Colour Notes Flat UI
- orange
- background-color: #E67E22;
- background-color: #D35400;
-
- blues
- #ABC1C7
- #67ADB4
- #4094C1
-
- yellow: #D8BC33;
-
-background: linear-gradient(#ccc, #fff);
-
-*/
-
-
-/* 
 --------------------------------------------------
- Basic page layout, that ensures that the footer is at the end of the page
+ Basic page layout, that ensures that the footer
+ is at the end of the page
 -------------------------------------------------- */
 	
 html, body 
 {
+  padding-top: 20px;
   height: 100%;
 }
 
 footer 
 {
-  color: #666;
-  background: #222;
+  color: #FFF;
+  background: #C84941;
   padding: 17px 0 18px 0;
-  border-top: 1px solid #000;
+  border-top: 1px solid #C84941;
 }
 
 footer a 
@@ -46,6 +30,12 @@ footer a:hover
   color: #efefef;
 }
 
+.buttonbar
+{
+  padding-top: 10px;
+}
+
+
 .wrapper 
 {
   min-height: 100%;
@@ -55,20 +45,31 @@ footer a:hover
   /*
     background-color: #4094C1; - google blue
     background-color: #EEA901; - orange brown
+    
+    #EEA901;
   */
-  background-color: #EEA901;
+  background-color: #FFD57C;
 }
 
 .push 
 {
   height: 63px;
-  background-color: #4094C1;
+  /* background-color: #4094C1; */
 }
 
 /* not required for sticky footer; just pushes hero down a bit */
 .wrapper > .container 
 {
   padding-top: 60px;
+}
+
+.wrapperNoColour 
+{
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -63px;
+  background-color: #FFFFFF;
 }
 
 
@@ -127,7 +128,11 @@ footer a:hover
 }
 
 
-
+.form-actions
+{
+  background-color: #FFF;
+  border-top: 1px solid #FFF;
+}
 
 /* 
 --------------------------------------------------
@@ -143,6 +148,14 @@ footer a:hover
     background-color:#33ccff;
 }
 
+/* 
+--------------------------------------------------
+ AJAX loading gif
+-------------------------------------------------- */
+
+#loading{
+  visibility:hidden;
+}
 
 /* 
 --------------------------------------------------
